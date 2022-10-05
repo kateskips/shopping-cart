@@ -7,3 +7,9 @@
 body {
     font-family: sans-serif;
 }
+
+.navbar{
+    background-color: #343330;
+    color: white;
+    padding: 25px 60px;
+}

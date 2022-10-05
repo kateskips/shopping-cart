@@ -9,7 +9,30 @@ body {
 }
 
 .navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     background-color: #343330;
     color: white;
     padding: 25px 60px;
+}
+
+.cart{
+    position: relative;
+    background-color: white;
+    font-size: 30px;
+    color: black;
+    padding: 4px;
+    border-radius: 5px;
+}
+
+.cartAmount{
+    position: absolute;
+    top: -15px;
+    right: -10px;
+    font-size: 20px;
+    background-color: red;
+    color: white;
+    padding: 3px;
+    border-radius: 3px;
 }

@@ -12,7 +12,7 @@ let shopItemsData = [
         id: "GB",
         name: "Game Boy",
         price: 500,
-        desc: "Play the classic sh*t",
+        desc: "Play the classic sh*t, not those shitty games your friends make you play",
         img: "images/Gameboy.jpg"
     },
     {
@@ -40,11 +40,11 @@ let generateShop = () => {
                 <h3>${name}</h3>
                 <p>${desc}</p>
                 <div class="price-quantity">
-                    <h2>${price}</h2>
+                    <h2>$ ${price}</h2>
                     <div class="buttons"></div>
-                    <i class="bi bi-dash-lg"></i>
+                    <i onClick="decrement(${id})" class="bi bi-dash-lg"></i>
                     <div id=${id} class="quantity">0</div>
-                    <i class="bi bi-plus-lg"></i>
+                    <i onClick="increment(${id})" class="bi bi-plus-lg"></i>
                 </div>
             </div>
         </div>
